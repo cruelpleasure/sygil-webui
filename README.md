@@ -2,11 +2,11 @@
 
 ## Created by [Sygil.Dev](https://github.com/sygil-dev)
 
-## [Join us at Sygil.Dev's Discord Server](https://discord.gg/gyXNe4NySY) [![Discord Server](https://user-images.githubusercontent.com/5977640/190528254-9b5b4423-47ee-4f24-b4f9-fd13fba37518.png)](https://discord.gg/gyXNe4NySY)
+## Join us at Sygil.Dev's Discord Server [![Generic badge](https://flat.badgen.net/discord/members/ttM8Tm6wge?icon=discord)](https://discord.gg/ttM8Tm6wge)
 
 ## Installation instructions for:
 
-- **[Windows](https://sygil-dev.github.io/sygil-webui/docs/Installation/windows-installation)** 
+- **[Windows](https://sygil-dev.github.io/sygil-webui/docs/Installation/windows-installation)**
 - **[Linux](https://sygil-dev.github.io/sygil-webui/docs/Installation/linux-installation)**
 
 ### Want to ask a question or request a feature?
@@ -23,9 +23,8 @@ Check the [Contribution Guide](CONTRIBUTING.md)
 
 [Sygil-Dev](https://github.com/Sygil-Dev) main devs:
 
-* ![hlky's avatar](https://avatars.githubusercontent.com/u/106811348?s=40&v=4) [hlky](https://github.com/hlky)
 * ![ZeroCool940711's avatar](https://avatars.githubusercontent.com/u/5977640?s=40&v=4)[ZeroCool940711](https://github.com/ZeroCool940711)
-* ![codedealer's avatar](https://avatars.githubusercontent.com/u/4258136?s=40&v=4)[codedealer](https://github.com/codedealer)
+* ![Kasiya13's avatar](https://avatars.githubusercontent.com/u/26075839?s=40&v=4)[Kasiya13](https://github.com/Kasiya13)
 
 ### Project Features:
 
@@ -35,10 +34,10 @@ Check the [Contribution Guide](CONTRIBUTING.md)
 
 * Run additional upscaling models on CPU to save VRAM
 
-* Textual inversion: [Reaserch Paper](https://textual-inversion.github.io/) 
+* Textual inversion: [Reaserch Paper](https://textual-inversion.github.io/)
 
 * K-Diffusion Samplers: A great collection of samplers to use, including:
-  
+
   - `k_euler`
   - `k_lms`
   - `k_euler_a`
@@ -96,8 +95,8 @@ An easy way to work with Stable Diffusion right from your browser.
 To give a token (tag recognized by the AI) a specific or increased weight (emphasis), add `:0.##` to the prompt, where `0.##` is a decimal that will specify the weight of all tokens before the colon.
 Ex: `cat:0.30, dog:0.70` or `guy riding a bicycle :0.7, incoming car :0.30`
 
-Negative prompts can be added by using  `###` , after which any tokens will be seen as negative. 
-Ex: `cat playing with string ### yarn` will negate `yarn` from the generated image. 
+Negative prompts can be added by using  `###` , after which any tokens will be seen as negative.
+Ex: `cat playing with string ### yarn` will negate `yarn` from the generated image.
 
 Negatives are a very powerful tool to get rid of contextually similar or related topics, but **be careful when adding them since the AI might see connections you can't**, and end up outputting gibberish
 
@@ -132,7 +131,7 @@ Lets you improve faces in pictures using the GFPGAN model. There is a checkbox i
 
 If you want to use GFPGAN to improve generated faces, you need to install it separately.
 Download [GFPGANv1.4.pth](https://github.com/TencentARC/GFPGAN/releases/download/v1.3.4/GFPGANv1.4.pth) and put it
-into the `/sygil-webui/models/gfpgan` directory. 
+into the `/sygil-webui/models/gfpgan` directory.
 
 ### RealESRGAN
 
@@ -142,7 +141,7 @@ Lets you double the resolution of generated images. There is a checkbox in every
 There is also a separate tab for using RealESRGAN on any picture.
 
 Download [RealESRGAN_x4plus.pth](https://github.com/xinntao/Real-ESRGAN/releases/download/v0.1.0/RealESRGAN_x4plus.pth) and [RealESRGAN_x4plus_anime_6B.pth](https://github.com/xinntao/Real-ESRGAN/releases/download/v0.2.2.4/RealESRGAN_x4plus_anime_6B.pth).
-Put them into the `sygil-webui/models/realesrgan` directory. 
+Put them into the `sygil-webui/models/realesrgan` directory.
 
 ### LSDR
 
@@ -175,8 +174,8 @@ which is available on [GitHub](https://github.com/CompVis/latent-diffusion). PDF
 
 [Stable Diffusion](#stable-diffusion-v1) is a latent text-to-image diffusion
 model.
-Thanks to a generous compute donation from [Stability AI](https://stability.ai/) and support from [LAION](https://laion.ai/), we were able to train a Latent Diffusion Model on 512x512 images from a subset of the [LAION-5B](https://laion.ai/blog/laion-5b/) database. 
-Similar to Google's [Imagen](https://arxiv.org/abs/2205.11487), 
+Thanks to a generous compute donation from [Stability AI](https://stability.ai/) and support from [LAION](https://laion.ai/), we were able to train a Latent Diffusion Model on 512x512 images from a subset of the [LAION-5B](https://laion.ai/blog/laion-5b/) database.
+Similar to Google's [Imagen](https://arxiv.org/abs/2205.11487),
 this model uses a frozen CLIP ViT-L/14 text encoder to condition the model on text prompts.
 With its 860M UNet and 123M text encoder, the model is relatively lightweight and runs on a GPU with at least 10GB VRAM.
 See [this section](#stable-diffusion-v1) below and the [model card](https://huggingface.co/CompVis/stable-diffusion).
@@ -185,26 +184,26 @@ See [this section](#stable-diffusion-v1) below and the [model card](https://hugg
 
 Stable Diffusion v1 refers to a specific configuration of the model
 architecture that uses a downsampling-factor 8 autoencoder with an 860M UNet
-and CLIP ViT-L/14 text encoder for the diffusion model. The model was pretrained on 256x256 images and 
+and CLIP ViT-L/14 text encoder for the diffusion model. The model was pretrained on 256x256 images and
 then finetuned on 512x512 images.
 
 *Note: Stable Diffusion v1 is a general text-to-image diffusion model and therefore mirrors biases and (mis-)conceptions that are present
-in its training data. 
+in its training data.
 Details on the training procedure and data, as well as the intended use of the model can be found in the corresponding [model card](https://huggingface.co/CompVis/stable-diffusion).
 
 ## Comments
 
 - Our code base for the diffusion models builds heavily on [OpenAI's ADM codebase](https://github.com/openai/guided-diffusion)
-  and [https://github.com/lucidrains/denoising-diffusion-pytorch](https://github.com/lucidrains/denoising-diffusion-pytorch). 
+  and [https://github.com/lucidrains/denoising-diffusion-pytorch](https://github.com/lucidrains/denoising-diffusion-pytorch).
   Thanks for open-sourcing!
 
-- The implementation of the transformer encoder is from [x-transformers](https://github.com/lucidrains/x-transformers) by [lucidrains](https://github.com/lucidrains?tab=repositories). 
+- The implementation of the transformer encoder is from [x-transformers](https://github.com/lucidrains/x-transformers) by [lucidrains](https://github.com/lucidrains?tab=repositories).
 
 ## BibTeX
 
 ```
 @misc{rombach2021highresolution,
-      title={High-Resolution Image Synthesis with Latent Diffusion Models}, 
+      title={High-Resolution Image Synthesis with Latent Diffusion Models},
       author={Robin Rombach and Andreas Blattmann and Dominik Lorenz and Patrick Esser and Björn Ommer},
       year={2021},
       eprint={2112.10752},
